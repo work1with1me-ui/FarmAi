@@ -9,7 +9,7 @@ const clearChatButton = document.getElementById("deleteButton");
 let currentUserMessage = null;
 let isGeneratingResponse = false;
 
-const GEMINI_API_KEY = "AIzaSyDS0fzO9Y1-6Jm4mXmoaHJrieB2k0QxCf4";
+const GEMINI_API_KEY = "AIzaSyB9NAvm6jEH1UowcHVibaD0_EKuQvpySZ4";
 
 // if (!GEMINI_API_KEY) {
 //   alert("System Error: Something went wrong.");
@@ -250,6 +250,7 @@ const handleOutgoingMessage = () => {
 themeToggleButton.addEventListener('click', () => {
   const isLightTheme = document.body.classList.toggle("light_mode");
   localStorage.setItem("themeColor", isLightTheme ? "light_mode" : "dark_mode");
+
 
   // Update icon based on theme
   const newIconClass = isLightTheme ? "bx bx-moon" : "bx bx-sun";
