@@ -9,7 +9,13 @@ const clearChatButton = document.getElementById("deleteButton");
 let currentUserMessage = null;
 let isGeneratingResponse = false;
 
-const GEMINI_API_KEY = "AIzaSyAtw3FuBny1tonhDRS1L3tNlgnRC2JgqdA";
+const GEMINI_API_KEY = "AIzaSyDS0fzO9Y1-6Jm4mXmoaHJrieB2k0QxCf4";
+
+// if (!GEMINI_API_KEY) {
+//   alert("System Error: Something went wrong.");
+//   return;
+// }
+
 const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 
